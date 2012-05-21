@@ -1,0 +1,67 @@
+@import "bootstrap";
+
+$bodyTopMargin:50px;
+$backgroundColor: #555555;
+$logoHeight:50px;
+$baseFontSize:30px;
+$linkColor:#FFFFFF;
+
+@mixin baseFont {
+	font-size:$baseFontSize;
+	color: #FFFFFF;
+	line-height:$baseFontSize;
+}
+
+@mixin verticalSection {
+	display:block;
+	margin-top:$baseFontSize / 2;
+}
+
+/* Global */
+
+a, a:link, a:active {
+	color:$linkColor;
+	text-decoration: none;
+}
+
+body {
+	background-color:$backgroundColor;
+	font-family: "proxima-nova",sans-serif;
+}
+
+.center-column {
+	margin-top:$bodyTopMargin;
+}
+
+/* Home page */
+
+logo {
+	display:block;
+	img {
+		height: $logoHeight;
+	}
+}
+
+tagline {
+	@include verticalSection;
+	@include baseFont;
+
+	location {
+		@include verticalSection;
+	}
+}
+
+contact {
+	@include baseFont;
+	@include verticalSection;
+	
+	display: inline-block;
+
+	background-color: #66CD00;
+	
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	
+	padding:8px;
+}
+
