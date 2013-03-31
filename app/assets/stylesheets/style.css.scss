@@ -41,33 +41,54 @@ body {
 
 /* Home page */
 
-logo {
-	display:block;
-	img {
-		height: $logoHeight;
+#home-page-container {
+	width:100%;
+	
+	#top {
+	margin-top:100px;
+	padding-left:$bodyTopMargin;
+		#logo {
+			display:inline-block;
+				img {
+				height: $logoHeight;
+			}
+		}		
+	}
+	
+	#middle-row {
+	padding-left:$bodyTopMargin;
+
+		display:block;
+		overflow:hidden;
+		background-color:#CCCCCC;
+		
+		#services {
+			width:50%;
+			float:left;
+		}
+		
+		#portfolio {
+			width:50%;
+			float:right;	
+		}
+	}
+	
+	#bottom {
+		display:block;
+		padding-left:$bodyTopMargin;
+
+		#contact {
+			@include baseFont;
+			@include verticalSection;
+			
+			display: inline-block;
+		
+			background-color: #66CD00;
+			
+			-moz-border-radius:5px;
+			-webkit-border-radius:5px;
+			
+			padding:8px;
+		}
 	}
 }
-
-tagline {
-	@include verticalSection;
-	@include baseFont;
-
-	location {
-		@include verticalSection;
-	}
-}
-
-contact {
-	@include baseFont;
-	@include verticalSection;
-	
-	display: inline-block;
-
-	background-color: #66CD00;
-	
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	
-	padding:8px;
-}
-

@@ -1,13 +1,13 @@
-<logo>
-	<%= image_tag "730StudiosLogo.png" %>
-</logo>
+<% provide(:page_id, "home-page-container") %>
 
-<tagline>
-	Mobile is more than just apps.<br /><br />	
-	730 Studios helps companies of all sizes bring mobile products to market. We provide services in mobile strategy, design, development and operations.
-	<location>We are based out of Toronto, Canada.</location>
-</tagline>
-
-<contact>
-	<%= mail_to "team@730studios.com", "Get in touch" %>
-</contact> and follow us on <%= link_to "Twitter", "http://www.twitter.com/730studios" %>. 
+<div class="center-column container">
+	<div class="row">
+		<div class="span4 offset4">
+			<div id="top">
+				<div id="logo">
+					<%= image_tag "730-Wordmark.png" %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
