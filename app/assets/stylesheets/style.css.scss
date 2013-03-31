@@ -1,6 +1,6 @@
 @import "bootstrap";
 
-$bodyTopMargin:50px;
+$bodyTopMargin:150px;
 $backgroundColor: #555555;
 $logoHeight:50px;
 $baseFontSize:30px;
@@ -45,10 +45,8 @@ body {
 	width:100%;
 	
 	#top {
-	margin-top:100px;
-	padding-left:$bodyTopMargin;
 		#logo {
-			display:inline-block;
+				display:inline-block;
 				img {
 				height: $logoHeight;
 			}
